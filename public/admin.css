@@ -1,0 +1,337 @@
+/* Стили для контейнеров и заголовков */
+nav {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    gap: 10px;
+}
+
+nav button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+nav .dropdown {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 10px;
+    top: 50px;
+}
+
+nav .dropdown button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
+}
+
+nav .dropdown button:hover {
+    background-color: #ddd;
+}
+.content-section {
+    display: none;
+    padding: 20px;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Стили для кнопок фильтра подъездов */
+.podjezd-filter {
+    margin-bottom: 20px;
+}
+
+.podjezd-filter button {
+    padding: 8px 16px;
+    margin-right: 5px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+.podjezd-filter button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Стили для таблицы прогресса */
+.progress-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.progress-table th,
+.progress-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.progress-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.progress-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Стили для подэтапов */
+.substage-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.substage-table th,
+.substage-table td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: left;
+}
+
+.substage-table th {
+    background-color: #e9ecef;
+}
+
+/* Стили для этапов */
+.stage {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+.table-section {
+    margin-top: 20px;
+}
+
+.summary-table,
+.warehouse-table,
+.employees-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.summary-table th,
+.summary-table td,
+.warehouse-table th,
+.warehouse-table td,
+.employees-table th,
+.employees-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.summary-table th,
+.warehouse-table th,
+.employees-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+/* Стили для команды */
+.team-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.team-tag {
+    background-color: #e0e0e0;
+    padding: 4px 8px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.add-team-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #007bff;
+}
+
+.team-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.team-dropdown button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.team-dropdown button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Стили для строки этажа */
+.floor-row {
+    cursor: pointer;
+}
+
+.floor-details {
+    display: none;
+}
+
+.floor-details.active {
+    display: table-row;
+}
+
+/* Стили для данных */
+.data-tag {
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.data-tag.progress {
+    background-color: #e7f3ff;
+    color: #0056b3;
+}
+
+.data-tag.weight {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Стили для объёма */
+.volume-container {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.volume-tag {
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.volume-tag.plaster {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.volume-tag.putty {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.volume-tag.total {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Стили для финансов */
+.financial-tag {
+    background-color: #d4edda;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #155724;
+}
+
+/* Стили для статусов */
+.status-select {
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.status-select.notStarted {
+    background-color: #f8d7da;
+}
+
+.status-select.inProgress {
+    background-color: #fff3cd;
+}
+
+.status-select.checked {
+    background-color: #d4edda;
+}
+
+.status-select.skipped {
+    background-color: #e2e3e5;
+}
+
+/* Стили для кнопок копирования весов */
+.copy-weight-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.copy-weight-btn.copied {
+    color: green;
+}
+
+/* Стили для кнопки сворачивания/разворачивания таблицы */
+.toggle-table-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Анимация для кнопок */
+@keyframes rotate180 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(180deg); }
+}
+
+/* Стили для эффекта сохранения */
+.save-success {
+    animation: flash 0.5s;
+}
+
+@keyframes flash {
+    0% { background-color: #d4edda; }
+    100% { background-color: transparent; }
+}
